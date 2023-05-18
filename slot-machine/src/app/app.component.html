@@ -1,0 +1,45 @@
+<div class="component">
+  <div id="title">
+    <h2>Welcome to my game!</h2>
+  </div>
+  <div class="slots-wrapper">
+    <app-figure></app-figure>
+    <div class="figure-display" type="figure">
+      <app-figure></app-figure>
+    </div>
+    <div class="figure-display" type="figure">
+      <app-figure></app-figure>
+    </div>
+    <div class="figure-display" type="figure">
+      <app-figure></app-figure>
+    </div>
+    <div class="figure-display" type="figure">
+      <app-figure></app-figure>
+    </div>
+  </div>
+  <div class="button-wrapper">
+    <button id="run-button" (click)="runSlotMachine()">try your chance</button>
+  </div>
+  <div class="counters">
+    <div>
+      <h4>Number of plays</h4>
+      <p>{{counterService.getNumberOfPlays()}}</p>
+    </div>
+    <div>
+      <h4>Number of two equal images</h4>
+      <p>{{counterService.getNumberOfPlaysWith2EqualImages()}}</p>
+    </div>
+    <div>
+      <h4>Number of three equal images</h4>
+      <p>{{counterService.getNumberOfPlaysWith3EqualImages()}}</p>
+    </div>
+    <div>
+      <h4>Number of four equal images</h4>
+      <p>{{counterService.getNumberOfPlaysWith4EqualImages()}}</p>
+    </div>
+    <div>
+      <h4>Number of five equal images</h4>
+      <p>{{counterService.getNumberOfPlaysWith5EqualImages()}}</p>
+    </div>
+  </div>
+</div>

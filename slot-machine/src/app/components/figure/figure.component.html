@@ -1,0 +1,7 @@
+<div class="figure-display" type="figure">
+    <div *ngIf="content == '?'; else figure">?</div>
+    <ng-template #figure>
+        <img src="{{content}}" alt="">
+    </ng-template>
+
+  </div>
